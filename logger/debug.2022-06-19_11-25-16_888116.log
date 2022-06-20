@@ -1,0 +1,72 @@
+2022-06-19T11:30:03.670372+0300 INFO path:map23
+2022-06-19T11:30:03.672961+0300 INFO API connected
+2022-06-19T11:30:04.491966+0300 INFO product_geojson:{"features": [{"geometry": {"coordinates": [[[[37.402199, 55.846948], [39.102821, 55.856911], [39.136851, 55.911054], [39.156266, 55.941691], [39.159994, 56.843709], [37.360438, 56.833047], [37.402199, 55.846948]]]], "type": "MultiPolygon"}, "id": 0, "properties": {"beginposition": "2022-06-08T08:45:59.024000Z", "cloudcoverpercentage": 0.000143, "datastripidentifier": "S2B_OPER_MSI_L2A_DS_2BPS_20220608T105925_S20220608T085005_N04.00", "endposition": "2022-06-08T08:45:59.024000Z", "filename": "S2B_MSIL2A_20220608T084559_N0400_R107_T37VDC_20220608T105925.SAFE", "format": "SAFE", "generationdate": "2022-06-08T10:59:25.000000Z", "granuleidentifier": "S2B_OPER_MSI_L2A_TL_2BPS_20220608T105925_A027446_T37VDC_N04.00", "highprobacloudspercentage": 1.7e-05, "id": "3bcc6d6f-bb1f-4e37-bb6d-9fcd94cbd499", "identifier": "S2B_MSIL2A_20220608T084559_N0400_R107_T37VDC_20220608T105925", "illuminationazimuthangle": 166.953743773516, "illuminationzenithangle": 33.9885296822473, "ingestiondate": "2022-06-08T18:26:44.104000Z", "instrumentname": "Multi-Spectral Instrument", "instrumentshortname": "MSI", "level1cpdiidentifier": "S2B_OPER_MSI_L1C_TL_2BPS_20220608T092801_A027446_T37VDC_N04.00", "link": "https://scihub.copernicus.eu/dhus/odata/v1/Products('3bcc6d6f-bb1f-4e37-bb6d-9fcd94cbd499')/$value", "link_alternative": "https://scihub.copernicus.eu/dhus/odata/v1/Products('3bcc6d6f-bb1f-4e37-bb6d-9fcd94cbd499')/", "link_icon": "https://scihub.copernicus.eu/dhus/odata/v1/Products('3bcc6d6f-bb1f-4e37-bb6d-9fcd94cbd499')/Products('Quicklook')/$value", "mediumprobacloudspercentage": 1.7e-05, "notvegetatedpercentage": 4.858983, "ondemand": "false", "orbitdirection": "DESCENDING", "orbitnumber": 27446, "platformidentifier": "2017-013A", "platformname": "Sentinel-2", "platformserialidentifier": "Sentinel-2B", "processingbaseline": "04.00", "processinglevel": "Level-2A", "producttype": "S2MSI2A", "relativeorbitnumber": 107, "s2datatakeid": "GS2B_20220608T084559_027446_N04.00", "size": "1.08 GB", "snowicepercentage": 6.999999999999998e-05, "summary": "Date: 2022-06-08T08:45:59.024Z, Instrument: MSI, Satellite: Sentinel-2, Size: 1.08 GB", "title": "S2B_MSIL2A_20220608T084559_N0400_R107_T37VDC_20220608T105925", "unclassifiedpercentage": 0.163174, "uuid": "3bcc6d6f-bb1f-4e37-bb6d-9fcd94cbd499", "vegetationpercentage": 93.672931, "waterpercentage": 1.301949}, "type": "Feature"}], "type": "FeatureCollection"}
+2022-06-19T11:30:04.492304+0300 INFO id_product:3bcc6d6f-bb1f-4e37-bb6d-9fcd94cbd499
+2022-06-19T11:32:40.311304+0300 INFO The data from the satellite is downloaded
+2022-06-19T11:39:43.115641+0300 INFO path:map24
+2022-06-19T11:39:43.117513+0300 INFO API connected
+2022-06-19T11:39:43.763317+0300 INFO product_geojson:{"features": [{"geometry": {"coordinates": [[[[37.438018, 54.949066], [38.546905, 54.955494], [38.607371, 55.055404], [38.694455, 55.198158], [38.78177, 55.340827], [38.869667, 55.48342], [38.958149, 55.625997], [39.047285, 55.768552], [39.136851, 55.911054], [39.156256, 55.941676], [39.156272, 55.945635], [37.398563, 55.935327], [37.438018, 54.949066]]]], "type": "MultiPolygon"}, "id": 0, "properties": {"beginposition": "2022-06-08T08:45:59.024000Z", "cloudcoverpercentage": 1.457317, "datastripidentifier": "S2B_OPER_MSI_L2A_DS_2BPS_20220608T105925_S20220608T085005_N04.00", "endposition": "2022-06-08T08:45:59.024000Z", "filename": "S2B_MSIL2A_20220608T084559_N0400_R107_T37UDB_20220608T105925.SAFE", "format": "SAFE", "generationdate": "2022-06-08T10:59:25.000000Z", "granuleidentifier": "S2B_OPER_MSI_L2A_TL_2BPS_20220608T105925_A027446_T37UDB_N04.00", "highprobacloudspercentage": 0.553566, "id": "2a3bc7b9-defd-4d9d-ae5f-2d17272e7256", "identifier": "S2B_MSIL2A_20220608T084559_N0400_R107_T37UDB_20220608T105925", "illuminationazimuthangle": 166.771478187866, "illuminationzenithangle": 33.1042522325967, "ingestiondate": "2022-06-08T18:24:39.876000Z", "instrumentname": "Multi-Spectral Instrument", "instrumentshortname": "MSI", "level1cpdiidentifier": "S2B_OPER_MSI_L1C_TL_2BPS_20220608T092801_A027446_T37UDB_N04.00", "link": "https://scihub.copernicus.eu/dhus/odata/v1/Products('2a3bc7b9-defd-4d9d-ae5f-2d17272e7256')/$value", "link_alternative": "https://scihub.copernicus.eu/dhus/odata/v1/Products('2a3bc7b9-defd-4d9d-ae5f-2d17272e7256')/", "link_icon": "https://scihub.copernicus.eu/dhus/odata/v1/Products('2a3bc7b9-defd-4d9d-ae5f-2d17272e7256')/Products('Quicklook')/$value", "mediumprobacloudspercentage": 0.70291, "notvegetatedpercentage": 12.98999, "ondemand": "false", "orbitdirection": "DESCENDING", "orbitnumber": 27446, "platformidentifier": "2017-013A", "platformname": "Sentinel-2", "platformserialidentifier": "Sentinel-2B", "processingbaseline": "04.00", "processinglevel": "Level-2A", "producttype": "S2MSI2A", "relativeorbitnumber": 107, "s2datatakeid": "GS2B_20220608T084559_027446_N04.00", "size": "1000.43 MB", "snowicepercentage": 2e-05, "summary": "Date: 2022-06-08T08:45:59.024Z, Instrument: MSI, Satellite: Sentinel-2, Size: 1000.43 MB", "title": "S2B_MSIL2A_20220608T084559_N0400_R107_T37UDB_20220608T105925", "unclassifiedpercentage": 0.235987, "uuid": "2a3bc7b9-defd-4d9d-ae5f-2d17272e7256", "vegetationpercentage": 83.54789, "waterpercentage": 0.818039}, "type": "Feature"}], "type": "FeatureCollection"}
+2022-06-19T11:39:43.763786+0300 INFO id_product:2a3bc7b9-defd-4d9d-ae5f-2d17272e7256
+2022-06-19T11:42:13.756124+0300 INFO The data from the satellite is downloaded
+2022-06-19T11:43:40.666222+0300 INFO path:map24
+2022-06-19T11:44:22.237852+0300 INFO File zip unpacked
+2022-06-19T11:44:22.260807+0300 INFO make_field_masked_image_tiff
+2022-06-19T11:45:45.786964+0300 INFO make_field_masked_image_tiff-out_meta: {'driver': 'GTiff', 'dtype': 'uint8', 'nodata': None, 'width': 76, 'height': 88, 'count': 3, 'crs': CRS.from_epsg(32637), 'transform': Affine(10.0, 0.0, 438340.0,
+       0.0, -10.0, 6160070.0)}
+2022-06-19T11:45:47.035579+0300 INFO RGB_10_TCI_field.png saved
+2022-06-19T11:45:47.082615+0300 INFO RGB_10_TCI_masked.jpeg saved
+2022-06-19T11:45:47.090830+0300 INFO make_field_ndvi_image_tiff
+2022-06-19T11:46:59.365486+0300 INFO make_field_ndvi_image_tiff-out_meta: {'driver': 'GTiff', 'dtype': 'float32', 'nodata': None, 'width': 76, 'height': 88, 'count': 1, 'crs': CRS.from_epsg(32637), 'transform': Affine(10.0, 0.0, 438340.0,
+       0.0, -10.0, 6160070.0)}
+2022-06-19T11:46:59.454194+0300 INFO middle_array_img_new: 40.39608253588517
+2022-06-19T11:46:59.454849+0300 INFO NDVI: min: 0.0, max: 0.5764944553375244, middle: 0.09
+2022-06-19T11:46:59.463497+0300 INFO NDVI_10_masked.jpeg saved
+2022-06-19T11:46:59.472457+0300 INFO ndvi_file saved: {'ndvi_data': {'middle_ndvi': 0.09}}
+2022-06-19T11:47:00.439595+0300 INFO NDVI_10_field.png saved
+2022-06-19T11:47:00.591509+0300 INFO Buffer "sat_field_map24" removed
+2022-06-19T11:47:00.669017+0300 INFO Files from ['./fields/map24/map24_NDVI_10.tiff', './fields/map24/map24_NDVI_10_masked.tiff', './fields/map24/map24_RGB_10_TCI.tiff', './fields/map24/map24_RGB_10_TCI_masked.tiff']" removed
+2022-06-19T11:47:00.669635+0300 INFO Files from ['./fields/map24/map24_NDVI_10.tiff', './fields/map24/map24_NDVI_10_masked.tiff', './fields/map24/map24_RGB_10_TCI.tiff', './fields/map24/map24_RGB_10_TCI_masked.tiff']" removed
+2022-06-19T11:47:00.671608+0300 INFO Files from ['./fields/map24/map24_NDVI_10.tiff', './fields/map24/map24_NDVI_10_masked.tiff', './fields/map24/map24_RGB_10_TCI.tiff', './fields/map24/map24_RGB_10_TCI_masked.tiff']" removed
+2022-06-19T11:47:00.672472+0300 INFO Files from ['./fields/map24/map24_NDVI_10.tiff', './fields/map24/map24_NDVI_10_masked.tiff', './fields/map24/map24_RGB_10_TCI.tiff', './fields/map24/map24_RGB_10_TCI_masked.tiff']" removed
+2022-06-19T11:52:47.822494+0300 INFO path:map23
+2022-06-19T11:52:58.441461+0300 INFO File zip unpacked
+2022-06-19T11:52:58.444602+0300 INFO make_field_masked_image_tiff
+2022-06-19T11:54:36.835638+0300 INFO make_field_masked_image_tiff-out_meta: {'driver': 'GTiff', 'dtype': 'uint8', 'nodata': None, 'width': 4850, 'height': 8208, 'count': 3, 'crs': CRS.from_epsg(32637), 'transform': Affine(10.0, 0.0, 430850.0,
+       0.0, -10.0, 6272280.0)}
+2022-06-19T11:54:54.879615+0300 INFO RGB_10_TCI_field.png saved
+2022-06-19T11:54:57.391599+0300 INFO RGB_10_TCI_masked.jpeg saved
+2022-06-19T11:54:57.411164+0300 INFO make_field_ndvi_image_tiff
+2022-06-19T11:56:26.766425+0300 INFO make_field_ndvi_image_tiff-out_meta: {'driver': 'GTiff', 'dtype': 'float32', 'nodata': None, 'width': 4850, 'height': 8208, 'count': 1, 'crs': CRS.from_epsg(32637), 'transform': Affine(10.0, 0.0, 430850.0,
+       0.0, -10.0, 6272280.0)}
+2022-06-19T11:56:36.501926+0300 INFO middle_array_img_new: 156.81687594200278
+2022-06-19T11:56:37.290343+0300 INFO NDVI: min: -0.6285454630851746, max: 0.753381073474884, middle: 0.23
+2022-06-19T11:56:37.494367+0300 INFO NDVI_10_masked.jpeg saved
+2022-06-19T11:56:37.626692+0300 INFO ndvi_file saved: {'ndvi_data': {'middle_ndvi': 0.23}}
+2022-06-19T11:56:41.726669+0300 INFO NDVI_10_field.png saved
+2022-06-19T11:56:41.794135+0300 INFO Buffer "sat_field_map23" removed
+2022-06-19T11:56:41.795844+0300 INFO Files from ['./fields/map23/map23_NDVI_10.tiff', './fields/map23/map23_NDVI_10_masked.tiff', './fields/map23/map23_RGB_10_TCI.tiff', './fields/map23/map23_RGB_10_TCI_masked.tiff']" removed
+2022-06-19T11:56:41.811207+0300 INFO Files from ['./fields/map23/map23_NDVI_10.tiff', './fields/map23/map23_NDVI_10_masked.tiff', './fields/map23/map23_RGB_10_TCI.tiff', './fields/map23/map23_RGB_10_TCI_masked.tiff']" removed
+2022-06-19T11:56:41.813641+0300 INFO Files from ['./fields/map23/map23_NDVI_10.tiff', './fields/map23/map23_NDVI_10_masked.tiff', './fields/map23/map23_RGB_10_TCI.tiff', './fields/map23/map23_RGB_10_TCI_masked.tiff']" removed
+2022-06-19T11:56:41.814236+0300 INFO Files from ['./fields/map23/map23_NDVI_10.tiff', './fields/map23/map23_NDVI_10_masked.tiff', './fields/map23/map23_RGB_10_TCI.tiff', './fields/map23/map23_RGB_10_TCI_masked.tiff']" removed
+2022-06-19T11:56:41.941127+0300 INFO path:map23
+2022-06-19T11:58:00.148717+0300 INFO path:map23
+2022-06-19T12:03:40.445575+0300 INFO path:map25
+2022-06-19T12:03:40.446664+0300 INFO API connected
+2022-06-19T12:03:41.088343+0300 INFO product_geojson:{"features": [{"geometry": {"coordinates": [[[[37.438018, 54.949066], [38.546905, 54.955494], [38.607371, 55.055404], [38.694455, 55.198158], [38.78177, 55.340827], [38.869667, 55.48342], [38.958149, 55.625997], [39.047285, 55.768552], [39.136851, 55.911054], [39.156256, 55.941676], [39.156272, 55.945635], [37.398563, 55.935327], [37.438018, 54.949066]]]], "type": "MultiPolygon"}, "id": 0, "properties": {"beginposition": "2022-06-08T08:45:59.024000Z", "cloudcoverpercentage": 1.457317, "datastripidentifier": "S2B_OPER_MSI_L2A_DS_2BPS_20220608T105925_S20220608T085005_N04.00", "endposition": "2022-06-08T08:45:59.024000Z", "filename": "S2B_MSIL2A_20220608T084559_N0400_R107_T37UDB_20220608T105925.SAFE", "format": "SAFE", "generationdate": "2022-06-08T10:59:25.000000Z", "granuleidentifier": "S2B_OPER_MSI_L2A_TL_2BPS_20220608T105925_A027446_T37UDB_N04.00", "highprobacloudspercentage": 0.553566, "id": "2a3bc7b9-defd-4d9d-ae5f-2d17272e7256", "identifier": "S2B_MSIL2A_20220608T084559_N0400_R107_T37UDB_20220608T105925", "illuminationazimuthangle": 166.771478187866, "illuminationzenithangle": 33.1042522325967, "ingestiondate": "2022-06-08T18:24:39.876000Z", "instrumentname": "Multi-Spectral Instrument", "instrumentshortname": "MSI", "level1cpdiidentifier": "S2B_OPER_MSI_L1C_TL_2BPS_20220608T092801_A027446_T37UDB_N04.00", "link": "https://scihub.copernicus.eu/dhus/odata/v1/Products('2a3bc7b9-defd-4d9d-ae5f-2d17272e7256')/$value", "link_alternative": "https://scihub.copernicus.eu/dhus/odata/v1/Products('2a3bc7b9-defd-4d9d-ae5f-2d17272e7256')/", "link_icon": "https://scihub.copernicus.eu/dhus/odata/v1/Products('2a3bc7b9-defd-4d9d-ae5f-2d17272e7256')/Products('Quicklook')/$value", "mediumprobacloudspercentage": 0.70291, "notvegetatedpercentage": 12.98999, "ondemand": "false", "orbitdirection": "DESCENDING", "orbitnumber": 27446, "platformidentifier": "2017-013A", "platformname": "Sentinel-2", "platformserialidentifier": "Sentinel-2B", "processingbaseline": "04.00", "processinglevel": "Level-2A", "producttype": "S2MSI2A", "relativeorbitnumber": 107, "s2datatakeid": "GS2B_20220608T084559_027446_N04.00", "size": "1000.43 MB", "snowicepercentage": 2e-05, "summary": "Date: 2022-06-08T08:45:59.024Z, Instrument: MSI, Satellite: Sentinel-2, Size: 1000.43 MB", "title": "S2B_MSIL2A_20220608T084559_N0400_R107_T37UDB_20220608T105925", "unclassifiedpercentage": 0.235987, "uuid": "2a3bc7b9-defd-4d9d-ae5f-2d17272e7256", "vegetationpercentage": 83.54789, "waterpercentage": 0.818039}, "type": "Feature"}], "type": "FeatureCollection"}
+2022-06-19T12:03:41.088685+0300 INFO id_product:2a3bc7b9-defd-4d9d-ae5f-2d17272e7256
+2022-06-19T12:05:59.314653+0300 INFO The data from the satellite is downloaded
+2022-06-19T12:06:58.620531+0300 INFO path:map25
+2022-06-19T12:07:12.717678+0300 INFO File zip unpacked
+2022-06-19T12:07:12.720088+0300 INFO make_field_masked_image_tiff
+2022-06-19T12:08:39.103094+0300 INFO make_field_masked_image_tiff-out_meta: {'driver': 'GTiff', 'dtype': 'uint8', 'nodata': None, 'width': 97, 'height': 128, 'count': 3, 'crs': CRS.from_epsg(32637), 'transform': Affine(10.0, 0.0, 436690.0,
+       0.0, -10.0, 6159410.0)}
+2022-06-19T12:08:39.888139+0300 INFO RGB_10_TCI_field.png saved
+2022-06-19T12:08:39.904541+0300 INFO RGB_10_TCI_masked.jpeg saved
+2022-06-19T12:08:39.911006+0300 INFO make_field_ndvi_image_tiff
+2022-06-19T12:09:42.790613+0300 INFO make_field_ndvi_image_tiff-out_meta: {'driver': 'GTiff', 'dtype': 'float32', 'nodata': None, 'width': 97, 'height': 128, 'count': 1, 'crs': CRS.from_epsg(32637), 'transform': Affine(10.0, 0.0, 436690.0,
+       0.0, -10.0, 6159410.0)}
+2022-06-19T12:09:42.804426+0300 INFO middle_array_img_new: 91.56523840206185
+2022-06-19T12:09:42.804972+0300 INFO NDVI: min: 0.0, max: 0.6770508885383606, middle: 0.24
+2022-06-19T12:09:42.936308+0300 INFO NDVI_10_masked.jpeg saved
+2022-06-19T12:09:42.946715+0300 INFO ndvi_file saved: {'ndvi_data': {'middle_ndvi': 0.24}}
+2022-06-19T12:09:43.416657+0300 INFO NDVI_10_field.png saved
