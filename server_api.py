@@ -43,12 +43,12 @@ async def create_upload_file(
 
 
 @app.post("/download-sat-field-data")
-async def load_data_field(field_name: str = Form(...)):
+async def load_data_field(field_name: str = Form(...), username: str = Form(...), password: str = Form(...)):
     """Loads data from the satellite to the server."""
     if field_name not in os.listdir(PATH_FIELDS):
         raise HTTPException(status_code=404, detail=f"'{field_name}' not found")
     logger.info(f'path:{field_name}')
-    message = await get_data(field_name)
+    message = await get_data(field_name, username, password)
     return Response(content=message, media_type="application/json")
 
 

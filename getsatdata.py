@@ -1,8 +1,9 @@
 """Receiving data from the satellite."""
-from sentinelsat import SentinelAPI, read_geojson, geojson_to_wkt
+from fastapi import HTTPException
+from sentinelsat import SentinelAPI, read_geojson, geojson_to_wkt, exceptions
 from loguru import logger
 import geojson
-from settings import USER, PASSWORD, PATH_API, PATH_FIELDS, PATH_BUFFER
+from settings import PATH_API, PATH_FIELDS, PATH_BUFFER
 
 
 
@@ -31,25 +32,31 @@ async def _get_product_geojson(api: SentinelAPI, products_from_sat: dict[str, di
 
 async def _get_products_from_sat(api: SentinelAPI, path_file_geojson: str) -> dict[str, dict]:
     footprint = geojson_to_wkt(read_geojson(path_file_geojson))
-    products_from_sat = api.query(footprint,
-                         date=('20220415','20220615'), platformname='Sentinel-2',
-                         order_by='cloudcoverpercentage',
-                         processinglevel='Level-2A',
-                         cloudcoverpercentage=(0, 10),
-                         limit=1)
-    return products_from_sat
+    try:
+        products_from_sat = api.query(footprint,
+                            date=('20220415','20220615'), platformname='Sentinel-2',
+                            order_by='cloudcoverpercentage',
+                            processinglevel='Level-2A',
+                            cloudcoverpercentage=(0, 10),
+                            limit=1)
+
+        return products_from_sat
+   
+    except exceptions.UnauthorizedError as ex:
+        logger.info(f'{ex}')
+        raise HTTPException(status_code=500, detail='Incorrect user name or password. Try again.')
 
 
-def _get_api() -> SentinelAPI:
-    api = SentinelAPI(USER, PASSWORD, PATH_API)
+def _get_api(username: str, password: str) -> SentinelAPI:
+    api = SentinelAPI(username, password, PATH_API)
     logger.info('API connected')
     return api
 
 
-async def get_data(field_name: str) -> str:
+async def get_data(field_name: str, username:str, password: str) -> str:
     """Connects to SentinelAPI and receives data from the satellite."""
     path_file_geojson=f'{PATH_FIELDS}{field_name}/{field_name}.geojson'
-    api = _get_api()
+    api = _get_api(username, password)
     products_from_sat = await _get_products_from_sat(api, path_file_geojson)
 
     product_geojson = await _get_product_geojson(api, products_from_sat, field_name)
