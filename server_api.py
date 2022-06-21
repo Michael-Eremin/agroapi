@@ -10,9 +10,16 @@ from unpacksatdata import make_data_field
 from settings import PATH_BUFFER, PATH_FIELDS
 import json
 import fnmatch
+from pydantic import BaseModel
 
 
 logger.add("logger/debug.log", format="{time} {level} {message}", level="DEBUG", rotation="5:00")
+
+class Field(BaseModel):
+    field_name: str
+    username: str
+    password: str
+
 
 # FastAPI app creation
 app = FastAPI()
