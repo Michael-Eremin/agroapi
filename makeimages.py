@@ -13,6 +13,17 @@ import os
 
 URL = str
 
+
+async def delete_data_field(field_name: str) -> None:
+    """Deletes all information about the field."""
+    path_to_field_name = f'{PATH_FIELDS}{field_name}'
+    try:
+        shutil.rmtree(path_to_field_name)
+        logger.info(f'Field "{field_name}" removed')
+    except OSError as e:
+        logger.info(f'Error "Field "{field_name}" : {e.strerror}')
+
+
 def make_response_to_client(final_field: str, final_NDVI: str) ->str:
     """Makes a message to the client about the end of the image creation process."""
     message = f'{final_field}, {final_NDVI}.'

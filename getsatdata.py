@@ -16,11 +16,13 @@ async def _download_data_from_sat(api: SentinelAPI, field_name: str, products_fr
 
 
 async def _get_id_product(product_geojson: geojson) -> str:
-        try:
-            id_product = product_geojson.get('features')[0].get('properties').get('uuid')
-        except IndexError:
-            print("The field is not received. Expand the range of the query: date, cloudcoverpercentage.")
+    try:
+        id_product = product_geojson.get('features')[0].get('properties').get('uuid')
         return id_product
+    except IndexError as ex:
+        logger.info(f'{ex}.The field is not received. Expand the range of the query: date, cloudcoverpercentage.')
+        raise HTTPException(status_code=500, detail='The field is not received. Expand the range of the query: date, cloudcoverpercentage.')
+    
 
 
 async def _get_product_geojson(api: SentinelAPI, products_from_sat: dict[str, dict], field_name: str) -> geojson:

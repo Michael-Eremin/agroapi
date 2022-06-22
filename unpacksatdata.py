@@ -1,6 +1,7 @@
 """Unzip the zip file from the satellite."""
 import geojson
 import zipfile
+from fastapi import HTTPException
 from settings import PATH_BUFFER, PATH_FIELDS
 from makeimages import make_images_tiff
 from loguru import logger
@@ -27,9 +28,13 @@ async def unzip_file(field_name: str) -> str:
     """Unpacks a zip file with image data. Returns the path to the unpacked file."""
     path_to_title_file = await get_path_to_title_file(field_name)
     name_zip_file =f'{path_to_title_file}.zip' 
-    with zipfile.ZipFile(name_zip_file, 'r') as zip_file:
-        zip_file.extractall(f'{PATH_BUFFER}sat_field_{field_name}/')
-    name_unzip_file = f'{path_to_title_file}.SAFE'
-    logger.info('File zip unpacked')
-    return name_unzip_file
+    try:
+        with zipfile.ZipFile(name_zip_file, 'r') as zip_file:
+            zip_file.extractall(f'{PATH_BUFFER}sat_field_{field_name}/')
+        name_unzip_file = f'{path_to_title_file}.SAFE'
+        logger.info('File zip unpacked')
+        return name_unzip_file
+    except FileNotFoundError as ex:
+        logger.info(f'{ex}.No such file or directory.')
+        raise HTTPException(status_code=500, detail='No such file or directory.')
 
