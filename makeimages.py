@@ -20,6 +20,7 @@ async def delete_data_field(field_name: str) -> None:
     try:
         shutil.rmtree(path_to_field_name)
         logger.info(f'Field "{field_name}" removed')
+        return f'Field "{field_name}" removed'
     except OSError as e:
         logger.info(f'Error "Field "{field_name}" : {e.strerror}')
 
