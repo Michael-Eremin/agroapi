@@ -36,5 +36,5 @@ async def unzip_file(field_name: str) -> str:
         return name_unzip_file
     except FileNotFoundError as ex:
         logger.info(f'{ex}.No such file or directory.')
-        raise HTTPException(status_code=500, detail='No such file or directory.')
+        raise HTTPException(status_code=500, detail='There is no satellite data file. Download satellite data "/download-sat-field-data".')
 
